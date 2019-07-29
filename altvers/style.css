@@ -1,0 +1,56 @@
+/* REGOLE GENERALI --------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#template {
+  display: none;
+}
+
+/* Regole del contenitore box */
+.box {
+  margin: 150px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 600px;
+  width: 600px;
+
+}
+
+/* Regole del quadrato */
+.quadro {
+  background-color: #fff;
+  border: solid 1px #000;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+/* Regole Responsive */
+@media screen and (max-width: 768px) {
+  /* Regole del contenitore box */
+  .box {
+    margin: 100px auto;
+    width: 300px;
+    width: 300px;
+  }
+  /* Regole del quadrato */
+  .quadro {
+    width: 50px;
+    height: 50px;
+  }
+}
